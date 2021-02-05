@@ -38,13 +38,15 @@ def printEvenNumber():
 # printEvenNumber()
 
 
-""" <----- Program 2 -----> """
-""" SAMPLE PROBLEM """
+""" <----- Program 3 -----> """
+""" Ask for input for a string. Ask for input of a letter. Count the number of that letter in the given string """
 def countString(str, tobeSearched):
     print( str.count(tobeSearched) )
 
 # countString("Jashan", "s")
 
+""" <----- Program 4 -----> """
+""" Ask for input, validate the given string. It must begin with http:// and end with .com. Tell the user if the string is valid or not  """
 def validateString():
     str = input("Enter a string that begins with http:// and end with .com > ")
     if str.startswith("http://") and str.endswith(".com") :
@@ -56,8 +58,8 @@ def validateString():
 # validateString()
 
 
-""" <----- Program 3 -----> """
-""" SAMPLE PROBLEM - Ask for numbers, add them together. Stop when the given number is negative. Print the sum. """
+""" <----- Program 5 -----> """
+""" Ask for numbers, add them together. Stop when the given number is negative. Print the sum. """
 
 def addNumbers():
     number = 0
@@ -69,8 +71,8 @@ def addNumbers():
 
 # addNumbers()
 
-""" <----- Program 4 -----> """
-""" Use a while loop to calculate   """
+""" <----- Program 6 -----> """
+""" Use a while loop to calculate sigma equation  """
 
 def calculateExpression(n):
     count = 0
@@ -86,7 +88,7 @@ def calculateExpression(n):
 
 
 
-""" <----- Program 5 -----> """
+""" <----- Program 7 -----> """
 """ Ask the user to enter a potential password. If it does not contain at least eight characters and at least one numerical digit, reject the password and ask again. """
 
 
@@ -109,7 +111,29 @@ def checkPotentialPassword():
         
 # checkPotentialPassword()
 
-""" <----- Program 6 -----> """
+""" Program 8 """
+""" Ask the user to enter a positive integer. If the user does not enter a positive integer, ask again. When the user enters a positive integer, n, calculate n!."""
+
+def calculateFactorial():
+    inputPassed = False
+    factorial = 1
+
+    while not inputPassed:
+        number = int(input("Enter a number > "))
+        if number >= 0:
+            inputPassed = True
+    
+    # calculating number!
+    for i in range(number, 0, -1):
+        factorial *= i
+
+    print(factorial)
+
+
+calculateFactorial()
+
+
+""" <----- Program 9 -----> """
 """ Ask the user to enter three numbers, a, b, and c. Print out a statement indicating which is smallest and which is largest. """
 
 def showLargestAndSmallestNumber():
@@ -138,21 +162,7 @@ def showLargestAndSmallestNumber():
 # showLargestAndSmallestNumber()
 
 
-# def printMultiplicationTable(number):
-#     count = 1
-#     for i in range():
-#         for j in range(4):
-#             if i == 0 and j == 0:
-#                 print("     ", end="")
-#             else:
-#                 print(count * number, " ", end="")
-#                 count += 1
-#         print()
-
-
-# printMultiplicationTable(3)
-
-""" <----- Program 7 -----> """
+""" <----- Program 10 -----> """
 """ 
     Write a program that displays a multiplication table similar to the following. Include up to 9x9.
          1    2    3
@@ -175,24 +185,3 @@ def printRandomTable():
 
 
 # printRandomTable()
-
-""" Program 8 """
-""" Ask the user to enter a positive integer. If the user does not enter a positive integer, ask again. When the user enters a positive integer, n, calculate n!."""
-
-def calculateFactorial():
-    inputPassed = False
-    factorial = 1
-
-    while not inputPassed:
-        number = int(input("Enter a number > "))
-        if number >= 0:
-            inputPassed = True
-    
-    # calculating number!
-    for i in range(number, 0, -1):
-        factorial *= i
-
-    print(factorial)
-
-
-calculateFactorial()
