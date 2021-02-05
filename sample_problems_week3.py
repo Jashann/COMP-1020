@@ -57,6 +57,18 @@ def validateString():
 
 # validateString()
 
+""" Progarm - Time Delay """
+""" Ask for a number of seconds. Print “The other side” after that many seconds """
+import time
+def waitForNumberOfSeconds():
+    seconds = int(input("Please enter time in seconds > "))
+    time.sleep(seconds)
+    print("The other side")
+
+# waitForNumberOfSeconds()
+""" NOTE: THE TIME PROGRAM USES time.sleep though time.time is given as I couldn't find solution with it """    
+    
+
 
 """ <----- Program 5 -----> """
 """ Ask for numbers, add them together. Stop when the given number is negative. Print the sum. """
@@ -130,7 +142,7 @@ def calculateFactorial():
     print(factorial)
 
 
-calculateFactorial()
+# calculateFactorial()
 
 
 """ <----- Program 9 -----> """
