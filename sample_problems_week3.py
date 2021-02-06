@@ -40,16 +40,62 @@ def printEvenNumber():
 
 """ <----- Program 3 -----> """
 """ Ask for input for a string. Ask for input of a letter. Count the number of that letter in the given string """
-def countString(str, tobeSearched):
-    print( str.count(tobeSearched) )
+def countString():
+    str = input("Enter a sentence > ")
+    letter = input("Enter a letter to get count of it > ")
+    count = 0
+    for char in str:
+        if char.lower() == letter.lower(): # to convert into lowercase so 'J' 'j' are treated same
+            count += 1
+    print(count)
 
-# countString("Jashan", "s")
+# countString()
+
+""" <----- Program - Growing text -----> """
+def growingString():
+    str = input("Enter a word and see it grow > ")
+    iterate = 0
+
+    while iterate < len(str):
+        print(str[:iterate+1])  # 0 to iterate + 1. iterate -> 1st loop run = 1, 2nd => 2 and so on.
+        iterate += 1
+
+# growingString()
+
+""" <----- Program - Print every second word  -----> """
+def printEverySecondWord():
+    str = input("Enter a word to get printed with skip every 1st letter > ")
+    iterate = 0
+
+    while iterate < len(str):
+        if iterate % 2 == 1: # if iterate is odd -> 1,3..., 1 refers to 2nd letter in the string
+            print(str[iterate], end="")
+        iterate += 1
+
+# printEverySecondWord()
+
+
+""" <----- Program - Print a word in 3 groups letter having each  -----> """
+def printThreeWords():
+    str = input("Enter a word having more than 3 letters to get Printed a word in 3 groups letter > ")
+    iterate = 0
+
+    length = len(str)
+
+    while iterate < length:  
+        substring = str[iterate:iterate+3] 
+        if len(substring) == 3:
+            print(substring)
+        iterate += 1
+
+printThreeWords()
+
 
 """ <----- Program 4 -----> """
 """ Ask for input, validate the given string. It must begin with http:// and end with .com. Tell the user if the string is valid or not  """
 def validateString():
     str = input("Enter a string that begins with http:// and end with .com > ")
-    if str.startswith("http://") and str.endswith(".com") :
+    if str[0:7]("http://") and str.endswith(".com") :
         print("String is valid")
     else: 
         print("String is not valid")
