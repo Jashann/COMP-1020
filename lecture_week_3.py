@@ -49,15 +49,38 @@
 #         cents = input("Enter a cost in cents > ")
 
 #     dollars = float(cents) / 100
-#     totalCost = None
+    # totalCost = None
 
-#     if numberOfItems < 10:
-#         totalCost = numberOfItems * dollars
-#     elif numberOfItems >= 10 and numberOfItems <= 19:
-#         totalCost = numberOfItems * dollars * 0.9
-#     else:
-#         totalCost = numberOfItems * dollars * 0.8
+    # if numberOfItems < 10:
+    #     totalCost = numberOfItems * dollars
+    # elif numberOfItems >= 10 and numberOfItems <= 19:
+    #     totalCost = numberOfItems * dollars * 0.9
+    # else:
+    #     totalCost = numberOfItems * dollars * 0.8
 
-#     print("The total cost of buying {} items is {:.2f}".format(numberOfItems,totalCost))
+    # print("The total cost of buying {} items is {:.2f}".format(numberOfItems,totalCost))
 
 # labSecond()
+
+
+numberOfPizzas = int(input("Enter number of pizzas you wanna order > "))
+
+typeOfOrder = input("You want: delivery or pickup > " )
+
+cost = None
+
+if typeOfOrder == "delivery":
+    if numberOfPizzas >= 10:
+        cost = 5 * numberOfPizzas 
+    elif numberOfPizzas >= 5:
+        cost = 8 * numberOfPizzas
+    else: 
+        cost = 10 * numberOfPizzas
+    cost += 5
+else:
+    if numberOfPizzas >= 5:
+        cost = 6 * numberOfPizzas 
+    else: 
+        cost = 11 * numberOfPizzas
+
+print("The cost of the order is ${}".format(cost))
