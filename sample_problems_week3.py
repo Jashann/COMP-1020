@@ -88,14 +88,14 @@ def printThreeWords():
             print(substring)
         iterate += 1
 
-printThreeWords()
+# printThreeWords()
 
 
 """ <----- Program 4 -----> """
 """ Ask for input, validate the given string. It must begin with http:// and end with .com. Tell the user if the string is valid or not  """
 def validateString():
     str = input("Enter a string that begins with http:// and end with .com > ")
-    if str[0:7]("http://") and str.endswith(".com") :
+    if str.startswith("http://") and str.endswith(".com") :
         print("String is valid")
     else: 
         print("String is not valid")
@@ -243,3 +243,28 @@ def printRandomTable():
 
 
 # printRandomTable()
+
+def printRandomTableUsingWhile():
+
+    row = 1000
+    column = 1000
+
+    i = 0
+    while i < row:
+        j = 0
+        while j < column:
+
+            spacesLength = len(str(row * column))
+
+            if i == 0 and j == 0:
+                print(" "*spacesLength, end="  ")
+            else:
+                if i * j == 0:
+                    print("{:{spaces}d}".format(i+j, spaces=spacesLength), end="  ")
+                else:
+                    print("{:{spaces}d}".format(i*j, spaces=spacesLength), end="  ")
+            j += 1
+        i += 1
+        print()
+
+# printRandomTableUsingWhile()

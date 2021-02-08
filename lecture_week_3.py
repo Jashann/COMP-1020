@@ -1,4 +1,4 @@
-# import sys
+import sys
 
 # def calculateCostOfTransportingSoil():
 
@@ -27,9 +27,9 @@
 #     if truckLoads < 10:
 #         perLoadCostOfTransport = 100
 #     else:
-#         perLoadCostOfTransport = 100
+#         perLoadCostOfTransport = 80
 
-#     totalCost = perCubicMetreSoilCost * volumeOfSoil + perLoadCostOfTransport * volumeOfTruckToTransport
+#     totalCost = perCubicMetreSoilCost * volumeOfSoil + perLoadCostOfTransport * truckLoads
 
 #     print("{} truck loads will be needed to transport {} m^3 soil. The cost incurring will be ${}".format(truckLoads, volumeOfSoil, totalCost))
 
@@ -62,25 +62,27 @@
 
 # labSecond()
 
+def quiz02():
+    numberOfPizzas = int(input("Enter number of pizzas you wanna order > "))
 
-numberOfPizzas = int(input("Enter number of pizzas you wanna order > "))
+    typeOfOrder = input("You want: delivery or pickup > " )
 
-typeOfOrder = input("You want: delivery or pickup > " )
+    cost = None
 
-cost = None
+    if typeOfOrder == "delivery":
+        if numberOfPizzas >= 10:
+            cost = 5 * numberOfPizzas 
+        elif numberOfPizzas >= 5:
+            cost = 8 * numberOfPizzas
+        else: 
+            cost = 10 * numberOfPizzas
+        cost += 5
+    else:
+        if numberOfPizzas >= 5:
+            cost = 6 * numberOfPizzas 
+        else: 
+            cost = 11 * numberOfPizzas
 
-if typeOfOrder == "delivery":
-    if numberOfPizzas >= 10:
-        cost = 5 * numberOfPizzas 
-    elif numberOfPizzas >= 5:
-        cost = 8 * numberOfPizzas
-    else: 
-        cost = 10 * numberOfPizzas
-    cost += 5
-else:
-    if numberOfPizzas >= 5:
-        cost = 6 * numberOfPizzas 
-    else: 
-        cost = 11 * numberOfPizzas
+    print("The cost of the order is ${}".format(cost))
 
-print("The cost of the order is ${}".format(cost))
+# quiz02()

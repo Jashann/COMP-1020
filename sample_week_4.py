@@ -1,0 +1,1 @@
+print(help("Jashan".count))
