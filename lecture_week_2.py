@@ -1,3 +1,11 @@
+"""
+author: Jashanjot Singh Gill
+github: https://github.com/Jashann
+portfolio: https://jashann.github.io/
+email: jashangill3592@gmail.com
+message: if you find a bug please do let me know.
+"""
+
 st = "Jashan Singh Gill"
 space = st.find(" ")
 sSpace = st.find(" ", space, len(st))

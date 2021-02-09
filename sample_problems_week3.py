@@ -1,3 +1,12 @@
+"""
+author: Jashanjot Singh Gill
+github: https://github.com/Jashann
+portfolio: https://jashann.github.io/
+email: jashangill3592@gmail.com
+message: if you find a bug please do let me know.
+"""
+
+
 """ <----- Program 1 -----> """
 """ APOSPWP Chapter 2 Exercises 2.1 """
 def print_Fahrenheit_Celsus_Table():
