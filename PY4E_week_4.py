@@ -3,7 +3,7 @@ author: Jashanjot Singh Gill
 github: https://github.com/Jashann
 portfolio: https://jashann.github.io/
 email: jashangill3592@gmail.com
-message: if you find a bug please do let me know.
+message: if you find a bug, please do let me know.
 """
 
 """ Lesson - 6 (String) 
