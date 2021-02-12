@@ -21,3 +21,16 @@ def readFileAndPrintLettersInEachLine():
 
 
 
+def quiz04():
+    userInput = "z_sample.txt"
+
+    myFile = open(userInput)
+    count = 0
+
+    for line in myFile:
+        wordsInALine = line.split()
+        count += len(wordsInALine)
+
+    print("Total number of words:", count)
+
+# quiz04()
