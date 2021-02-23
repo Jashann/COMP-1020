@@ -34,3 +34,13 @@ def quiz04():
     print("Total number of words:", count)
 
 # quiz04()
+
+
+def practice():
+    name = "Jashanjot"
+    age = 19
+    # FORMATTED STRINGS
+    print(f"hey {name}, I am {age+2} years old")
+
+
+practice()
