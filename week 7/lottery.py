@@ -38,4 +38,7 @@ def lotteryWinWhatTime():
     print(f'Lottery after {count} tries. Time taken in seconds: {finalTime}')
 
 
-print(lotteryWinWhatTime())
+# print(lotteryWinWhatTime())
+list1 = [1,3,2,1]
+list2 = [1,1,2,3]
+print(ifSame(list1, list2))
