@@ -24,7 +24,6 @@ from typing import Sequence
 # print(headCount, tailCount)
 
 
-from itertools import count
 import random
 
 
