@@ -96,13 +96,25 @@ arr = np.flip(arr)
 
 
 
-# Saving
-a = np.array([1, 2, 3, 4, 5, 6])
+## Saving
+#a = np.array([1, 2, 3, 4, 5, 6])
+#
+## You can save it as “filename.npy” with:
+#np.savetxt('new_file.csv', a)
+## np.save('filename', a)
+#
+#b = np.load('filename.npy')
+## print(b)
 
-# You can save it as “filename.npy” with:
-np.savetxt('new_file.csv', a)
-# np.save('filename', a)
 
-b = np.load('filename.npy')
-# print(b)
+import matplotlib.pyplot as plt
+import numpy as np
+np.random.seed(444)
+
+plt.scatter(1,2)
+
+
+
+
+
 
