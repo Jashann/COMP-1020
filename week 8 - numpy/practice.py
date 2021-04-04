@@ -12,7 +12,7 @@ arr4 = np.array([ [1,2,3,5], [5,6,7,8] ])
 arr5 = np.empty((2,3,2), "int32")
 arr6 = np.arange(2,10,2)
 arr7 = np.linspace(0,10, num=3)
-# print(arr7)
+print(arr1)
 # print(arr7.size)
 
 
@@ -105,13 +105,6 @@ arr = np.flip(arr)
 #
 #b = np.load('filename.npy')
 ## print(b)
-
-
-import matplotlib.pyplot as plt
-import numpy as np
-np.random.seed(444)
-
-plt.scatter(1,2)
 
 
 
